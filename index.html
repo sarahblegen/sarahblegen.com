@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Keeps search engines out. Delete this line only when you are ready to be found. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Sarah Blegen | Product &amp; Transformation</title>
+<meta name="description" content="Every organization has friction it can't see. From regulated startups to global enterprises, Sarah Blegen finds it, fixes it, and leaves teams ready to own what comes next.">
+
+<!-- Link preview (LinkedIn, email, texts). The image must be a full web address. -->
+<link rel="canonical" href="https://sarahblegen.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sarahblegen.com/">
+<meta property="og:title" content="Sarah Blegen | Product Management, Transformation, AI-Assisted Delivery">
+<meta property="og:description" content="Every organization has friction it can't see. I find it, fix it, and leave teams ready to own what comes next.">
+<meta property="og:image" content="https://sarahblegen.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sarah Blegen: Product Management, Transformation, AI-Assisted Delivery">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Browser-tab icon: "SB" in a teal circle -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230e5c61'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='28' fill='%23ffffff'%3ESB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ===== COLORS AND FONTS: change these to restyle the whole page ===== */
+  :root {
+    --bg: #f8f7f4;           /* warm off-white page background */
+    --surface: #ffffff;      /* cards */
+    --text: #1b1d1f;         /* main text */
+    --muted: #55595e;        /* secondary text (AA contrast on --bg) */
+    --line: #e3e1db;         /* borders */
+    --accent: #0e5c61;       /* deep teal: links, labels, highlights */
+    --accent-soft: #e3efee;
+    --warm: #b4532a;         /* terracotta: small accents */
+    --warm-soft: #fbeee6;
+    --todo-bg: #fff4c2;
+    --todo-line: #b08900;
+    --serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+  .skip-link { position: absolute; left: 16px; top: -48px; background: var(--text); color: #fff; padding: 8px 14px; border-radius: 6px; z-index: 100; }
+  .skip-link:focus { top: 12px; }
+
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+  .narrow { max-width: 720px; }
+
+  /* ----- Top navigation ----- */
+  .topnav { position: sticky; top: 0; z-index: 50; background: rgba(248, 247, 244, 0.9); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  .topnav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 58px; flex-wrap: wrap; }
+  .monogram { font-family: var(--serif); font-weight: 600; font-size: 1.25rem; text-decoration: none; color: var(--text); }
+  .topnav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px 22px; flex-wrap: wrap; }
+  .topnav ul a { font-family: var(--mono); font-size: 0.8125rem; color: var(--muted); text-decoration: none; padding: 6px 0; display: inline-block; }
+  .topnav ul a:hover { color: var(--accent); }
+
+  /* ----- Shared section styling ----- */
+  section { padding: 96px 0; }
+  .eyebrow { font-family: var(--mono); font-size: 0.8125rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; }
+  h1, h2, h3, h4 { margin: 0; line-height: 1.2; }
+  h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(2rem, 5vw, 2.75rem); letter-spacing: -0.015em; margin-bottom: 20px; }
+  h2 em, h1 em { font-style: italic; color: var(--accent); }
+  .lede { color: var(--muted); max-width: 620px; margin: 0 0 48px; }
+  /* ----- Section color bands: give the page rhythm as you scroll ----- */
+  .band-white { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .band-dark { background: radial-gradient(80% 60% at 85% 0%, #17565a 0%, transparent 60%), #0f3a3d; color: #eef3f2; }
+  .band-dark .eyebrow { color: #f0a47f; }
+  .band-dark h2 em { color: #8fd3cb; }
+  .band-dark .lede, .band-dark .aside-note { color: #bcd0ce; }
+  .band-dark .step { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.14); }
+  .band-dark .step:last-child { background: linear-gradient(160deg, rgba(143,211,203,0.18), rgba(255,255,255,0.04)); border-color: rgba(143,211,203,0.45); }
+  .band-dark .step .num { background: #f8f7f4; color: #0f3a3d; }
+  .band-dark .step .what { color: #f0a47f; }
+  .band-dark .result { border-top-color: #8fd3cb; }
+  .band-dark .result p, .band-dark .result .delta span { color: #bcd0ce; }
+  .band-glow { position: relative; overflow: hidden; }
+  .band-glow::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(50% 70% at 50% 100%, rgba(14, 92, 97, 0.10), transparent 70%); }
+
+  /* ----- Hero ----- */
+  .hero { position: relative; overflow: hidden; padding: 120px 0 112px; text-align: center; }
+  .hero::before {
+    content: ""; position: absolute; inset: -20% -10% auto; height: 120%; z-index: -1;
+    background:
+      radial-gradient(40% 50% at 30% 30%, rgba(14, 92, 97, 0.10), transparent 70%),
+      radial-gradient(35% 45% at 72% 40%, rgba(180, 83, 42, 0.08), transparent 70%);
+  }
+  .hero h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 10vw, 5.5rem); letter-spacing: -0.03em; line-height: 1.05; }
+  .hero .mission { font-family: var(--serif); font-style: italic; font-size: clamp(1.25rem, 3vw, 1.6rem); line-height: 1.45; color: var(--text); max-width: 720px; margin: 24px auto 0; }
+  .hero-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 14px; margin-top: 36px; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,0.7); font-family: var(--mono); font-size: 0.8125rem; color: var(--text); text-decoration: none; }
+  a.pill:hover { border-color: var(--accent); color: var(--accent); }
+  .pill svg { width: 15px; height: 15px; }
+  .pill.plain { color: var(--muted); background: transparent; }
+
+  /* ----- About ----- */
+  .about p { margin: 0 0 20px; font-size: 1.125rem; }
+  .about p:first-of-type::first-letter { font-family: var(--serif); float: left; font-size: 3.6rem; line-height: 0.9; padding: 6px 10px 0 0; color: var(--accent); }
+
+  /* ----- Experience timeline ----- */
+  .timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: 21px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
+  .job { position: relative; padding: 0 0 56px 72px; }
+  .job:last-child { padding-bottom: 0; }
+  .job .mark { position: absolute; left: 0; top: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--surface); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-weight: 600; color: var(--accent); font-size: 1rem; }
+  .job h3 { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; letter-spacing: -0.01em; }
+  .job .role { font-family: var(--mono); font-size: 0.8125rem; color: var(--muted); margin: 4px 0 10px; }
+  .job .summary { margin: 0 0 18px; max-width: 680px; }
+  .signature { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; max-width: 720px; box-shadow: 0 1px 2px rgba(0,0,0,0.03), 0 8px 24px -16px rgba(14, 92, 97, 0.25); }
+  .signature .label { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--warm); margin: 0 0 6px; }
+  .signature h4 { font-size: 1.125rem; font-weight: 600; margin-bottom: 8px; }
+  .signature p { margin: 0; }
+  /* Link chips: pill buttons in the tag row (the example site's pattern), filled teal on hover */
+  .tags li.link { padding: 0; background: none; }
+  .tags li.link a { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 999px; background: var(--accent-soft); border: 1px solid #b9d6d3; color: var(--accent); text-decoration: none; font-weight: 500; transition: background .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease; }
+  .tags li.link a::after { content: ""; width: 9px; height: 9px; background: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 1h8v8M11 1 1 11' fill='none' stroke='black' stroke-width='2'/%3E%3C/svg%3E") center/contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 1h8v8M11 1 1 11' fill='none' stroke='black' stroke-width='2'/%3E%3C/svg%3E") center/contain no-repeat; transition: transform .2s ease; }
+  .tags li.link a:hover, .tags li.link a:focus-visible { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-1px); box-shadow: 0 6px 14px -8px rgba(14, 92, 97, 0.6); }
+  .tags li.link a:hover::after { transform: translate(1px, -1px); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .tags { list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags li { font-family: var(--mono); font-size: 0.75rem; padding: 4px 10px; border-radius: 999px; background: #efeee9; color: #3c3f42; }
+
+  /* ----- AI workflow evolution ----- */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: step; position: relative; }
+  .step { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px 20px; position: relative; }
+  .step .num { display: inline-flex; width: 34px; height: 34px; border-radius: 50%; align-items: center; justify-content: center; background: var(--accent); color: #fff; font-family: var(--mono); font-size: 0.8125rem; margin-bottom: 14px; }
+  .step:last-child { background: linear-gradient(160deg, #ffffff 0%, var(--accent-soft) 100%); border-color: #c7dcda; }
+  .step h3 { font-size: 1.125rem; font-weight: 600; margin-bottom: 4px; }
+  .step .what { font-family: var(--mono); font-size: 0.75rem; color: var(--warm); margin: 0 0 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .step p { margin: 0 0 10px; font-size: 0.9375rem; line-height: 1.6; }
+  .step p:last-child { margin-bottom: 0; }
+  .step .mine { color: var(--muted); }
+  .results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+  .result { border-top: 2px solid var(--accent); padding-top: 12px; text-align: center; }
+  .result .delta { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; }
+  .result .delta span { color: var(--muted); font-size: 1rem; }
+  .result p { margin: 2px 0 0; font-size: 0.875rem; color: var(--muted); line-height: 1.45; }
+  .aside-note { margin-top: 32px; font-size: 0.9375rem; color: var(--muted); max-width: 720px; }
+
+  /* ----- Lab ----- */
+  .lab { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  @media (max-width: 700px) { .lab { grid-template-columns: 1fr; } }
+  .project { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px; display: flex; flex-direction: column; transition: transform .2s ease, box-shadow .2s ease; }
+  .project:hover { transform: translateY(-3px); box-shadow: 0 14px 30px -18px rgba(0,0,0,0.25); }
+  .project.feature { grid-column: 1 / -1; background: linear-gradient(135deg, #ffffff 40%, var(--accent-soft) 100%); }
+  .project h3 { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; }
+  .project .sub { font-family: var(--serif); font-style: italic; color: var(--muted); margin: 0 0 12px; }
+  .project p { margin: 0 0 12px; font-size: 0.975rem; }
+  .project .built { margin-top: auto; padding-top: 14px; font-family: var(--mono); font-size: 0.75rem; color: var(--accent); }
+  .status { align-self: flex-start; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; margin-bottom: 14px; }
+  .status.planning { background: var(--warm-soft); color: #8a3b14; }
+  .status.personal { background: var(--accent-soft); color: var(--accent); }
+  .status.live { background: #e7f3e8; color: #24642f; }
+  .status.inprocess { background: #eceaf7; color: #463c8c; }
+  /* Cat photo, shown whole (change width to make it bigger or smaller) */
+  .project .pet { width: 240px; max-width: 100%; margin: 8px auto 0; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 24px -14px rgba(0,0,0,0.45); }
+  .project .pet img { display: block; width: 100%; height: auto; }
+  .soon { align-self: center; margin: 16px 0 0 !important; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: #eeedfe; color: #3c3489; font-family: var(--mono); font-size: 0.78rem !important; }
+  .soon svg { width: 15px; height: 15px; }
+  .fine { font-size: 0.8125rem !important; color: var(--muted); background: #f3f2ee; border-radius: 8px; padding: 9px 12px; }
+  details { margin: 0 0 12px; font-size: 0.9375rem; }
+  summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+  details p { margin: 8px 0 0 !important; }
+
+  /* ----- Book wireframes that open from "What's planned" / "See the plan" ----- */
+  details.plan summary { list-style: none; display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px; border: 1px solid #b9d6d3; background: var(--accent-soft); font-size: 0.875rem; transition: background .2s ease, color .2s ease; }
+  details.plan summary::-webkit-details-marker { display: none; }
+  details.plan summary::after { content: ""; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform .25s ease; }
+  details.plan[open] summary::after { transform: rotate(-135deg) translateY(-2px); }
+  details.plan summary:hover { background: var(--accent); color: #fff; }
+  @keyframes unfold { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+  details.plan[open] .wf { animation: unfold .45s cubic-bezier(.2,.7,.2,1); }
+  .wf { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+  .wf-page { margin: 0; min-height: 200px; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 5px; font-size: 0.72rem; line-height: 1.35; color: var(--muted); box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+  .wf-page figcaption { margin-top: auto; padding-top: 6px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 0.68rem; color: var(--text); }
+  .wf-label { font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .wf-title { font-weight: 600; color: var(--text); font-size: 0.8rem; }
+  .wf-small { font-size: 0.68rem; }
+  .wf-line { height: 6px; border-radius: 3px; background: #ecebe6; }
+  .wf-line.short { width: 65%; }
+  .wf-box { border: 1px dashed #bdbab2; border-radius: 6px; padding: 3px 6px; text-align: center; }
+  .wf-box.solid { border-style: solid; background: #f6f5f1; }
+  .wf-three { display: grid; gap: 3px; font-size: 0.66rem; }
+  .wf-three .wf-box { padding: 2px 6px; text-align: left; }
+  .wf-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .wf-chips.col { flex-direction: column; }
+  .wf-chips b { font-weight: 500; font-size: 0.66rem; padding: 1px 7px; border-radius: 999px; }
+  .wf-toc { margin: 0; padding-left: 16px; font-size: 0.66rem; line-height: 1.45; }
+  .wf-list, .wf-check { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+  .wf-check li::before { content: ""; display: inline-block; width: 8px; height: 8px; border: 1px solid #a9a69e; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  .wf-list li::before { content: "•"; margin-right: 6px; }
+  .wf-note { border-radius: 6px; padding: 4px 6px; font-size: 0.68rem; }
+  .wf-flow { display: flex; align-items: center; gap: 5px; }
+  .wf-flow .wf-box { flex: 1; }
+  .wf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+  .wf-grid i { height: 14px; border-radius: 3px; background: #ecebe6; }
+  .wf-steps { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; font-size: 0.64rem; }
+  .wf-steps b { font-weight: 500; padding: 2px 5px; border-radius: 4px; }
+  .wf-bar { height: 8px; border-radius: 4px; background: #ecebe6; overflow: hidden; }
+  .wf-bar i { display: block; height: 100%; border-radius: 4px; }
+  .wf-btn { border-radius: 6px; padding: 3px 6px; text-align: center; color: #fff; }
+  .wf-cover-title { font-family: var(--serif); font-size: 1.05rem; line-height: 1.15; }
+  .wf-tabs { display: flex; gap: 3px; }
+  .wf-tabs i { flex: 1; height: 6px; border-radius: 2px; }
+  .wf-cat { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; object-position: 52% 22%; margin: 4px auto; border: 2px solid #fff; }
+  .wf-foot { font-size: 0.8rem !important; color: var(--muted); }
+  /* Cookbook theme: sage green and tomato */
+  .wf.beans .cover { background: #e1f5ee; border-color: #9fe1cb; justify-content: center; }
+  .wf.beans .cover .wf-cover-title { color: #04342c; }
+  .wf.beans .cover .wf-cover-title em { color: #c84a22; font-style: normal; }
+  .wf.beans .cover .wf-small, .wf.beans .cover .wf-label { color: #0f6e56; }
+  .wf.beans .wf-tabs i:nth-child(odd) { background: #d85a30; }
+  .wf.beans .wf-tabs i:nth-child(even) { background: #1d9e75; }
+  .wf.beans .wf-chips b { background: #fbe9e2; color: #8a3414; }
+  .wf.beans .wf-note { background: #fbe9e2; color: #8a3414; }
+  .wf.beans .wf-method { background: #e1f5ee; color: #085041; border-radius: 6px; padding: 4px 6px; font-weight: 500; }
+  /* Meow Meow theme: soft purple */
+  .wf.meow .cover { background: #eeedfe; border-color: #cecbf6; text-align: center; justify-content: center; }
+  .wf.meow .cover .wf-cover-title { color: #3c3489; font-size: 1.2rem; }
+  .wf.meow .cover .wf-small, .wf.meow .cover .wf-label { color: #534ab7; }
+  .wf.meow .wf-chips b, .wf.meow .wf-steps b { background: #eeedfe; color: #3c3489; }
+  .wf.meow .wf-bar i { background: #afa9ec; }
+  .wf.meow .wf-btn { background: #534ab7; }
+  @media (prefers-reduced-motion: reduce) { details.plan[open] .wf { animation: none; } }
+
+  /* ----- TODO placeholders (search "TODO" to find them all) ----- */
+  .todo { background: var(--todo-bg); border: 2px dashed var(--todo-line); color: #3d2f00; border-radius: 8px; padding: 10px 14px; font-size: 0.9rem !important; }
+  .todo::before { content: "TODO"; display: inline-block; font-family: var(--mono); font-weight: 600; font-size: 0.7rem; background: var(--todo-line); color: #fff; padding: 1px 6px; border-radius: 4px; margin-right: 8px; }
+
+  /* ----- Toolkit ----- */
+  .toolkit { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px 40px; }
+  .toolkit h3 { font-family: var(--mono); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .toolkit ul { list-style: none; margin: 0; padding: 0; }
+  .toolkit li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 0.975rem; }
+  .toolkit li small { color: var(--muted); font-size: 0.85rem; }
+
+  /* ----- Email buttons: hover shows the address, click copies it ----- */
+  .copy-email { position: relative; cursor: pointer; font: inherit; }
+  button.pill.copy-email { font-family: var(--mono); font-size: 0.8125rem; }
+  .button svg { width: 16px; height: 16px; vertical-align: -3px; margin-right: 6px; }
+  .copy-email .tip { position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translate(-50%, 4px); white-space: nowrap; background: var(--text); color: #fff; font-family: var(--mono); font-size: 0.75rem; font-weight: 400; padding: 6px 10px; border-radius: 8px; opacity: 0; pointer-events: none; transition: opacity .15s ease, transform .15s ease; }
+  .copy-email .tip::after { content: ""; position: absolute; left: 50%; top: 100%; margin-left: -5px; border: 5px solid transparent; border-top-color: var(--text); }
+  .copy-email:hover .tip, .copy-email:focus-visible .tip, .copy-email.copied .tip { opacity: 1; transform: translate(-50%, 0); }
+  .copy-email.copied .tip { background: var(--accent); }
+  .copy-email.copied .tip::after { border-top-color: var(--accent); }
+
+  /* ----- Contact ----- */
+  .contact { text-align: center; padding-bottom: 72px; }
+  .contact p { color: var(--muted); max-width: 540px; margin: 0 auto; }
+  .contact .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .button { display: inline-block; padding: 13px 24px; border-radius: 999px; border: 1px solid var(--text); color: var(--text); text-decoration: none; font-weight: 600; font-size: 0.975rem; }
+  .button.primary { background: var(--text); color: #fff; }
+  .button:hover { border-color: var(--accent); color: var(--accent); }
+  .button.primary:hover { background: var(--accent); color: #fff; }
+  footer { padding: 28px 0 44px; text-align: center; font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
+
+  /* ===== MOTION (all of it switches off for visitors who ask for reduced motion) ===== */
+
+  /* Hero: lines rise in one after another; background glow drifts slowly */
+  @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+  @keyframes drift { from { transform: translate3d(-3%, -2%, 0) scale(1); } to { transform: translate3d(3%, 2%, 0) scale(1.08); } }
+  .hero .wrap > * { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+  .hero .wrap > :nth-child(1) { animation-delay: .05s; }
+  .hero .wrap > :nth-child(2) { animation-delay: .18s; }
+  .hero .wrap > :nth-child(3) { animation-delay: .34s; }
+  .hero .wrap > :nth-child(4) { animation-delay: .5s; }
+  .hero::before { animation: drift 16s ease-in-out infinite alternate; }
+
+  /* Reading progress bar along the bottom of the top menu */
+  .progress { position: absolute; left: 0; bottom: -1px; height: 2px; width: 100%; transform-origin: 0 50%; transform: scaleX(var(--p, 0)); background: linear-gradient(90deg, var(--accent), var(--warm)); }
+
+  /* Menu link for the section you're reading */
+  .topnav ul a[aria-current="true"] { color: var(--accent); box-shadow: inset 0 -2px 0 var(--accent); }
+
+  /* Sections and cards fade and slide in as they scroll into view */
+  .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); transition-delay: var(--delay, 0s); }
+  .js .job.reveal { transform: translateX(-28px); }
+  .js .project.reveal, .js .step.reveal { transform: translateY(28px) scale(.97); }
+  .js .reveal.in { opacity: 1; transform: none; }
+
+  /* Experience timeline line fills in as you scroll past it */
+  .timeline::after { content: ""; position: absolute; left: 20px; top: 8px; width: 3px; border-radius: 3px; height: calc(var(--fill, 0) * (100% - 16px)); background: linear-gradient(180deg, var(--accent), var(--warm)); }
+  .job .mark { z-index: 1; transition: background .4s ease, color .4s ease, border-color .4s ease; }
+  .job.lit .mark { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .hero .wrap > *, .hero::before { animation: none; }
+    .js .reveal, .js .job.reveal, .js .project.reveal, .js .step.reveal { opacity: 1; transform: none; transition: none; }
+    .project, .project:hover { transition: none; transform: none; }
+    .timeline::after { --fill: 1; }
+  }
+
+  @media (max-width: 860px) {
+    .steps, .results { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    section { padding: 64px 0; }
+    .hero { padding: 72px 0 64px; }
+    .topnav { position: relative; }
+    html { scroll-padding-top: 16px; }
+    .topnav .wrap { justify-content: center; padding: 8px 20px; }
+    .steps, .results { grid-template-columns: 1fr; }
+    .timeline::before { left: 17px; }
+    .timeline::after { left: 16px; }
+    .job { padding-left: 52px; }
+    .job .mark { width: 36px; height: 36px; font-size: 0.875rem; }
+    .signature, .project { padding: 20px; }
+  }
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="topnav" aria-label="Main">
+  <div class="wrap">
+    <a class="monogram" href="#top" aria-label="Sarah Blegen, back to top">SB</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#ai">AI workflow</a></li>
+      <li><a href="#lab">Lab</a></li>
+      <li><a href="#toolkit">Toolkit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</nav>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Product Management · Transformation · AI-Assisted Delivery</p>
+    <h1>Sarah Blegen</h1>
+    <p class="mission">Every organization has friction it can't see. From regulated startups to global enterprises, I find it, fix it, and leave teams ready to own what comes next.</p>
+    <div class="hero-links">
+      <a class="pill" href="https://www.linkedin.com/in/sarahblegen/" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>
+        LinkedIn</a>
+      <button type="button" class="pill copy-email" data-email="sarahjblegen@gmail.com" aria-label="Email: sarahjblegen@gmail.com. Click to copy.">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email<span class="tip" aria-hidden="true">sarahjblegen@gmail.com · click to copy</span></button>
+      <span class="pill plain">Greater Minneapolis-St. Paul</span>
+    </div>
+  </div>
+</header>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about" aria-labelledby="about-title">
+  <div class="wrap narrow reveal">
+    <p class="eyebrow">// About</p>
+    <h2 id="about-title">At home in the <em>middle of change.</em></h2>
+    <p>I'm drawn to the part of a transformation most people would rather skip: the new system nobody has learned yet, the workflow that quietly slows everyone down, the decision being made without the data behind it. I learn the system quickly, make it clear enough to automate and document, train the people who will run it, and move on to the next strategic change.</p>
+    <p>Some of my best fixes started by simply watching someone work. At Lionrock, treatment plans kept running late, so I sat with one of our counselors and watched her process. She was clearing copied dates by hand. That one tiny, awkward step turned out to be the first snowflake. <a href="#lionrock">See how it snowballed into a 40% improvement in clinical compliance.</a></p>
+    <!-- PREVIOUS VERSION (to revert, replace the two sentences after "by hand." with this):
+         Fixing that one awkward step was the start of a 40% improvement in clinical compliance. -->
+
+    <p>Today I'm a Senior Product Owner at TSI Incorporated, where I own about 95% of an enterprise transformation program and serve as Scrum Master on multiple teams. AI has become part of how I deliver that work, and I've taught my workflow to teammates.</p>
+    <p>My path runs through a regulated behavioral health startup, a global enterprise, and a regional bank. Different industries, one throughline: find what's slowing people down, fix it, and leave behind something others can run.</p>
+  </div>
+</section>
+
+
+<!-- ================= EXPERIENCE: one signature project per company ================= -->
+<section id="experience" class="band-white" aria-labelledby="exp-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">// The work</p>
+      <h2 id="exp-title">Experience</h2>
+      <p class="lede">One company, one signature project.</p>
+    </div>
+
+    <ol class="timeline">
+      <li class="job reveal">
+        <span class="mark" aria-hidden="true">T</span>
+        <h3>TSI Incorporated</h3>
+        <p class="role">Senior Product Owner</p>
+        <p class="summary">I own about 95% of a multi-year enterprise business transformation and serve as Scrum Master on multiple teams.</p>
+        <div class="signature">
+          <p class="label">Signature project</p>
+          <h4>CRM requirements gap analysis</h4>
+          <p>As the program moved from Salesforce Sales Cloud to SAP Sales Cloud, I ran formal workshops with sales and marketing subject-matter experts across the US and EU, then wrote my own requirements before ever seeing the vendor's list. Measured against their 194, I matched their depth and found 44 more.</p>
+          <ul class="tags" aria-label="Links and highlights"><li class="link"><a href="https://tsi.com/" target="_blank" rel="noopener">TSI.com<span class="sr-only"> (opens in a new tab)</span></a></li><li>Salesforce → SAP Sales Cloud</li><li>~95% of the transformation program</li><li>US + EU stakeholder workshops</li></ul>
+        </div>
+      </li>
+
+      <!-- Lionrock: no logo; the name links to its LinkedIn page -->
+      <li class="job reveal" id="lionrock">
+        <span class="mark" aria-hidden="true">L</span>
+        <h3>Lionrock Behavioral Health</h3>
+        <p class="role">Product Manager → Director of Information Systems</p>
+        <p class="summary">I owned product and information systems for a funded, angel-stage startup in a highly regulated industry, operating in about 99% of states. Promoted to Director, I retained my product management duties.</p>
+        <div class="signature">
+          <p class="label">Signature project</p>
+          <h4>Treatment plan compliance</h4>
+          <p>Treatment plans were running late: counselors forgot, and the workflow was working against them. After watching a counselor clear copied dates by hand, I made those dates and error-throwing fields clear automatically, then built a compliance dashboard that accounts for each state's due dates. Clinical compliance improved 40%, measured against prior-year audit time and Joint Commission and state findings.</p>
+          <ul class="tags" aria-label="Links and highlights"><li class="link"><a href="https://www.linkedin.com/company/lionrock-behavioral-health/about/" target="_blank" rel="noopener">Lionrock on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li><li>SOC-2 compliance: 20% → 93%</li><li>$1.25M spend avoided</li><li>Led a team of 9–10</li></ul>
+        </div>
+      </li>
+
+      <li class="job reveal">
+        <span class="mark" aria-hidden="true">3M</span>
+        <h3>3M</h3>
+        <p class="role">Customer Account Management · eBusiness · Product Owner, Global Business Process Support</p>
+        <p class="summary">I owned key ecommerce and identity and access management (IAM) tools and standardized business processes for distributors and service centers around the world.</p>
+        <div class="signature">
+          <p class="label">Signature project</p>
+          <h4>Global IAM and B2B ecommerce migration</h4>
+          <p>A data migration covering 60,000+ users. I owned the Variant Configuration Tool and the IAM engine behind the distributor ecommerce site, which decided who could see which price books and products, by division and country.</p>          <ul class="tags" aria-label="Links and highlights"><li class="link"><a href="https://order.3m.com/store/bComUSSite/en_US/login" target="_blank" rel="noopener">Distributor portal<span class="sr-only"> (3M, opens in a new tab)</span></a></li><li class="link"><a href="https://www.3m.com/" target="_blank" rel="noopener">3M.com<span class="sr-only"> (opens in a new tab)</span></a></li><li>60,000+ users migrated</li><li>2,800 labor hours saved a year</li><li>29-division SOP consolidation</li></ul>
+        </div>
+      </li>
+
+      <li class="job reveal">
+        <span class="mark" aria-hidden="true">TCF</span>
+        <h3>TCF Bank</h3>
+        <p class="role">Product Owner · now Huntington Bank</p>
+        <p class="summary">I owned products across banking platforms, strategic sourcing, and facilities management.</p>
+        <div class="signature">
+          <p class="label">Signature project</p>
+          <h4>Funds Availability</h4>
+          <p>Funds availability decides when a deposit becomes money a customer can use, so this program touched every dollar of every customer at two mid-size regional banks holding $37 billion in combined deposits. I owned it from concept to pre-launch in 10 months: defining funds availability around new routing and account numbers during platform scoping, guiding testing, and serving as the primary contact for the FIS platform vendor. Float and holds were my accountability.</p>
+          <ul class="tags" aria-label="Links and highlights"><li class="link"><a href="https://www.huntington.com/tcf-bank" target="_blank" rel="noopener">TCF, now Huntington<span class="sr-only"> (opens in a new tab)</span></a></li><li>$37B in combined deposits</li><li>Concept to pre-launch in 10 months</li><li>FIS platform vendor lead</li></ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- ================= AI WORKFLOW EVOLUTION ================= -->
+<section id="ai" class="band-dark" aria-labelledby="ai-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">// How I work with AI</p>
+      <h2 id="ai-title">From a single chat to <em>building with Claude Code</em> in six months.</h2>
+      <p class="lede">My own workflow, rebuilt in four steps. Each tool added something the last one couldn't do. The inputs, the prompts, and the judgment stay mine.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="num" aria-hidden="true">01</span>
+        <h3>Chats</h3>
+        <p class="what">One conversation at a time</p>
+        <p>Where I started: simple individual chats, each one starting from scratch.</p>
+      </li>
+      <li class="step reveal">
+        <span class="num" aria-hidden="true">02</span>
+        <h3>Projects</h3>
+        <p class="what">Shared files and instructions</p>
+        <p>I loaded architecture docs, requirements, instrument and software manuals, and a feature comparison list, then prompted them into domains, epics, and stories, plus should-be workflows and feature maps.</p>
+      </li>
+      <li class="step reveal">
+        <span class="num" aria-hidden="true">03</span>
+        <h3>Cowork</h3>
+        <p class="what">Claude working on my computer</p>
+        <p>I built a full repository Claude can use to retrieve, update, edit, and manage files in a protected folder.</p>
+        <p>I use a Cowork skill for service-management builds, and Claude works alongside me in Jira and other applications as my copilot.</p>
+      </li>
+      <li class="step reveal">
+        <span class="num" aria-hidden="true">04</span>
+        <h3>Claude Code</h3>
+        <p class="what">From direction to working build</p>
+        <p>This website was built with it, and I'm using it to plan Tell Me More.</p>
+      </li>
+    </ol>
+
+    <div class="results reveal" aria-label="My before and after">
+      <div class="result"><div class="delta">3 weeks <span>→</span> 1 week</div><p>Epic and story drafting</p></div>
+      <div class="result"><div class="delta">5 days <span>→</span> 4 hours</div><p>Workflow and feature diagrams</p></div>
+      <div class="result"><div class="delta">4 days <span>→</span> 3 hours</div><p>Leadership project updates</p></div>    </div>
+    <p class="aside-note reveal">These are my individual results on TSI delivery work, and I've taught the workflow to teammates. I cross-check GPT and Claude against each other for quality, and backlog prioritization stays with me.</p>
+  </div>
+</section>
+
+
+<!-- ================= LAB: personal builds ================= -->
+<section id="lab" aria-labelledby="lab-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">// The lab</p>
+      <h2 id="lab-title">Personal <em>builds.</em></h2>
+      <p class="lede">Things I make on my own, described by what they do.</p>
+    </div>
+
+    <div class="lab">
+      <article class="project feature reveal">
+        <span class="status live">You're looking at it</span>
+        <h3>This portfolio</h3>
+        <p class="sub">A single-page site, built in conversation</p>
+        <p>I wrote the content brief, set the rules (every claim traces back to that brief, nothing invented or rounded up), and directed the design and writing through Claude Code, from first draft to the page you're reading.</p>
+        <ul class="tags"><li>Single-page site</li><li>Accessible design</li><li>Mobile-friendly</li></ul>
+        <p class="built">Built with Claude Code</p>
+      </article>
+
+      <article class="project reveal">
+        <span class="status personal">Personal project</span>
+        <h3>Personal Finance Planner</h3>
+        <p class="sub">Seeing my finances clearly, decades ahead</p>
+        <p>I wanted to understand my finances more deeply. This tool allows me to track and understand my investments, and adds an interactive calculation database for retirement expenses and strategic stacking of income.</p>
+        <p>I can change the numbers in real time, adjusting levels, limits, and contributions to different funds, and watch the picture shift. It helps me plan the next decades of my life financially.</p>
+        <p><strong>What's next:</strong> real-time integration with my brokerage portfolio, so positions import automatically instead of being entered by hand. The challenge to solve first is the brokerage's multi-factor authentication (MFA).</p>
+        <p class="fine"><strong>Not financial advice,</strong> and not a replacement for a professional financial advisor. A personal project; it makes no claims about actual returns or results.</p>
+        <p class="built">Built in Excel</p>
+      </article>
+
+      <article class="project reveal">
+        <span class="status personal">Personal project</span>
+        <h3>Meow Meow</h3>
+        <p class="sub">A homemade cat food recipe book</p>
+        <p>Structured homemade recipes for my cats, built around a repeatable batch, portion, freeze, and thaw routine, with a whole-food approach and minimal synthetic supplements.</p>
+        <p>It includes a nutrient calculator for the macro- and micronutrients in natural homemade food, plus ratio calculators for building a balanced meal.</p>        <details class="plan">
+          <summary>See the plan</summary>
+          <!-- Wireframe of the book: layout only, no recipes or amounts -->
+          <div class="wf meow">
+            <figure class="wf-page cover">
+              <span class="wf-label">Recipe book</span>
+              <img class="wf-cat" src="cat.webp" alt="" width="56" height="56" loading="lazy">
+              <span class="wf-cover-title">Meow Meow</span>
+              <span class="wf-small">Homemade, whole-food meals</span>
+              <figcaption>Cover</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Recipe entry</span>
+              <span class="wf-title">Recipe name</span>
+              <span class="wf-line"></span><span class="wf-line short"></span>
+              <span class="wf-steps"><b>Batch</b>›<b>Portion</b>›<b>Freeze</b>›<b>Thaw</b></span>
+              <span class="wf-box">Notes</span>
+              <figcaption>Batch routine</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Nutrient totals</span>
+              <span class="wf-chips"><b>Macronutrients</b><b>Micronutrients</b></span>
+              <span class="wf-bar"><i style="width:80%"></i></span>
+              <span class="wf-bar"><i style="width:60%"></i></span>
+              <span class="wf-bar"><i style="width:70%"></i></span>
+              <span class="wf-bar"><i style="width:45%"></i></span>
+              <figcaption>Nutrient calculator</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Recipe calculator</span>
+              <span class="wf-title">1 · Meat weight</span>
+              <span class="wf-box">— lb</span>
+              <span class="wf-btn">Calculate</span>
+              <span class="wf-title">2 · Your batch</span>
+              <span class="wf-chips col"><b>Organ meats</b><b>Supplements</b><b>Liquids and eggs</b><b>Optional add-ins</b></span>
+              <figcaption>Batch calculator</figcaption>
+            </figure>
+          </div>
+          <p class="wf-foot">Wireframe only. Amounts aren't shown.</p>
+        </details>
+        <p class="fine"><strong>Not nutrition or veterinary advice.</strong> No recipes, ratios, brands, or amounts are shared here.</p>
+        <div class="pet"><img src="cat.webp" alt="My black cat sitting in a small cardboard box, looking up with yellow eyes" width="952" height="1269" loading="lazy"></div>
+        <p class="soon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg> <em>Coming soon: Meow Meow mobile app</em></p>
+      </article>
+
+      <article class="project reveal">
+        <span class="status planning">In planning</span>
+        <h3>From Bland to Grand</h3>
+        <p class="sub">A pantry cookbook for the everyday home cook (working title)</p>
+        <p>Turning affordable, shelf-stable bulk ingredients into satisfying meals for everyday cooking, camping, and backpacking. Base recipes come in several versions, such as regular, no-power, and lightweight backpacking, with gluten-free, dairy-free, vegetarian, and vegan adaptations.</p>
+        <p>It's my project end to end: format, purpose, audience, the gap it fills, and what goes on every page. I'm collaborating with one other cook and with backpackers.</p>
+        <details class="plan">
+          <summary>What's planned</summary>
+          <!-- Wireframe of the book: each .wf-page is one page; text is placeholder layout only -->
+          <div class="wf beans">
+            <figure class="wf-page cover">
+              <span class="wf-label">Spiral-bound · tabbed</span>
+              <span class="wf-cover-title">From Bland to <em>Grand</em></span>
+              <span class="wf-small">For the everyday home cook</span>
+              <span class="wf-tabs"><i></i><i></i><i></i><i></i></span>
+              <figcaption>Cover</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Contents</span>
+              <ol class="wf-toc"><li>Stocking Your Pantry</li><li>Ingredient Preparation Methods</li><li>Spice Blends &amp; Sauces</li><li>Breakfasts</li><li>Soups &amp; Stews</li><li>Salads &amp; Sides</li><li>Main Dishes</li><li>Breads &amp; Baked Goods</li><li>Desserts</li><li>Homemade Mixes &amp; Gifts</li></ol>
+              <figcaption>10 planned sections</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Main dishes</span>
+              <span class="wf-title">Base recipe</span>
+              <span class="wf-chips"><b>Gluten-free</b><b>Vegan</b></span>
+              <span class="wf-line"></span><span class="wf-line short"></span>
+              <span class="wf-three"><span class="wf-box">Regular</span><span class="wf-box">No-power</span><span class="wf-box">Backpacking</span></span>
+              <span class="wf-box solid">Tips and tricks</span>
+              <figcaption>One recipe, several versions</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Storing your food</span>
+              <span class="wf-title">Peas</span>
+              <span class="wf-method">Frozen</span><span class="wf-method">Canned</span><span class="wf-method">Dehydrated</span><span class="wf-method">Freeze-dried</span>
+              <figcaption>Every way to store each food</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Storage safety</span>
+              <span class="wf-title">Beyond canning</span>
+              <ul class="wf-list"><li>Labeling and dating</li><li>Rotating your stock</li><li>Temperature and moisture</li><li>Containers and sealing</li><li>Checking stored food</li></ul>
+              <span class="wf-note">Cites current USDA guidelines</span>
+              <figcaption>Food-safety best practices</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Pantry to plate</span>
+              <span class="wf-flow"><span class="wf-box">Staple</span>→<span class="wf-box">Meals</span></span>
+              <span class="wf-flow"><span class="wf-box">Staple</span>→<span class="wf-box">Meals</span></span>
+              <span class="wf-flow"><span class="wf-box">Staple</span>→<span class="wf-box">Meals</span></span>
+              <figcaption>Quick-reference guides</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Reference</span>
+              <span class="wf-note">Homemade vs. store-bought cost</span>
+              <span class="wf-title">Substitutions</span>
+              <span class="wf-grid"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <figcaption>Costs and substitutions</figcaption>
+            </figure>
+            <figure class="wf-page">
+              <span class="wf-label">Printable worksheet</span>
+              <span class="wf-title">Stocking your pantry</span>
+              <ul class="wf-check"><li>Grains</li><li>Legumes</li><li>Shelf-stable proteins</li><li>Produce</li><li>Flavor boosters</li><li>Herbs and spices</li></ul>
+              <figcaption>Worksheets</figcaption>
+            </figure>
+          </div>
+          <p class="wf-foot">Planned as a spiral-bound print book and a reflowable ebook. Wireframe only.</p>
+        </details>
+        <p class="fine">Not yet written or published; recipes not yet tested.</p>
+      </article>
+
+      <article class="project reveal">
+        <span class="status inprocess">In process</span>
+        <h3>Tell Me More</h3>
+        <p class="sub">A conversation that helps job seekers find their story</p>
+        <p>Many people don't recognize their strengths until someone points them out. Tell Me More is an interactive AI tool that interviews job seekers conversationally, so they can answer in their own words. Unconventional questions draw out overlooked experience, specialties, and achievements, then organize them into a clear direction.</p>
+        <p>It uses career counseling methods and personality insights as context, not as formal career counseling; I'm not a certified or licensed career counselor or psychologist.</p>
+        <p>A free tool, now in use case definition and customer requirements. A recruiter has agreed to review it.</p>
+        <p class="built">Planned with Claude Code</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= TOOLKIT: skills and credentials ================= -->
+<section id="toolkit" class="band-white" aria-labelledby="toolkit-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">// Toolkit</p>
+      <h2 id="toolkit-title">Skills &amp; <em>credentials.</em></h2>
+    </div>
+    <div class="toolkit reveal">
+      <div>
+        <h3>Credentials</h3>
+        <ul>
+          <li>Certified Scrum Product Owner (CSPO)</li>
+          <li>Certified ScrumMaster (CSM)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Methods</h3>
+        <ul>
+          <li>Agile: Scrum and Kanban</li>
+          <li>Waterfall and hybrid</li>
+          <li>Lean Six Sigma <small>· project experience</small></li>
+          <li>ITIL-aligned practice</li>
+        </ul>
+      </div>
+      <div>
+        <h3>AI tools</h3>
+        <ul>
+          <li>Claude <small>· incl. Claude Code</small></li>
+          <li>Microsoft Copilot</li>
+          <li>ChatGPT</li>
+          <li>Perplexity</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Platforms</h3>
+        <ul>
+          <li>Jira &amp; Jira Service Management</li>
+          <li>ServiceNow, Asana, VersionOne</li>
+          <li>Salesforce <small>· hands-on admin</small></li>
+          <li>Oracle <small>· source-to-pay</small></li>
+          <li>PeopleSoft Receivables, Esker OCR, EDI</li>
+          <li>SAP <small>· business &amp; program ownership</small></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact band-glow" aria-labelledby="contact-title">
+  <div class="wrap reveal">
+    <p class="eyebrow">// Contact</p>
+    <h2 id="contact-title">Let's <em>talk.</em></h2>
+    <p>If your team needs to untangle a process, modernize a system, or bring AI into the work, I'd love to hear about it.</p>
+    <div class="actions">
+      <button type="button" class="button primary copy-email" data-email="sarahjblegen@gmail.com" aria-label="Email: sarahjblegen@gmail.com. Click to copy.">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        sarahjblegen@gmail.com<span class="tip" aria-hidden="true">Click to copy</span></button>
+      <a class="button" href="https://www.linkedin.com/in/sarahblegen/" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg>
+        LinkedIn</a>
+      <!-- Résumé download: save your résumé as resume.pdf next to this page, then delete the two comment lines around this button.
+      <a class="button" href="resume.pdf" download="Sarah-Blegen-Resume.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+        Download résumé</a>
+      -->
+      <p class="sr-only" role="status" id="copy-status"></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© Sarah Blegen · Greater Minneapolis-St. Paul</div>
+</footer>
+
+<!-- Email buttons: hovering shows the address; clicking copies it and shows "Copied!" -->
+<script>
+  (function () {
+    var status = document.getElementById('copy-status');
+    function fallbackCopy(text) {
+      var t = document.createElement('textarea');
+      t.value = text; t.setAttribute('readonly', ''); t.style.position = 'absolute'; t.style.left = '-9999px';
+      document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); } catch (err) {} finally { document.body.removeChild(t); }
+    }
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(function () { fallbackCopy(text); });
+      }
+      fallbackCopy(text);
+      return Promise.resolve();
+    }
+    document.querySelectorAll('.copy-email').forEach(function (btn) {
+      var tip = btn.querySelector('.tip'), original = tip.textContent, timer;
+      btn.addEventListener('click', function () {
+        var email = btn.dataset.email;
+        copyText(email).then(function () {
+          tip.textContent = 'Copied!';
+          btn.classList.add('copied');
+          if (status) status.textContent = 'Email address copied';
+          clearTimeout(timer);
+          timer = setTimeout(function () { btn.classList.remove('copied'); tip.textContent = original; }, 1800);
+        });
+      });
+    });
+  })();
+</script>
+
+<!-- Scroll effects: fade-ins, progress bar, active menu link, timeline fill.
+     Safe to delete: the page still works and shows everything without it. -->
+<script>
+  (function () {
+    var root = document.documentElement;
+    var items = document.querySelectorAll('.reveal');
+
+    // Cards in a group appear one after another
+    document.querySelectorAll('.timeline, .steps, .lab, .results').forEach(function (group) {
+      group.querySelectorAll(':scope > .reveal').forEach(function (el, i) { el.style.setProperty('--delay', (i * 0.12) + 's'); });
+    });
+
+    if (!('IntersectionObserver' in window)) { items.forEach(function (el) { el.classList.add('in'); }); return; }
+
+    // Fade in on scroll
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    items.forEach(function (el) { io.observe(el); });
+
+    // Highlight the menu link for the section on screen
+    var links = {};
+    document.querySelectorAll('.topnav ul a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var link = links[e.target.id];
+        if (!link) return;
+        if (e.isIntersecting) {
+          Object.keys(links).forEach(function (k) { links[k].removeAttribute('aria-current'); });
+          link.setAttribute('aria-current', 'true');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(function (s) { spy.observe(s); });
+
+    // Progress bar and timeline fill
+    var bar = document.querySelector('.progress');
+    var timeline = document.querySelector('.timeline');
+    var jobs = document.querySelectorAll('.job');
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var max = root.scrollHeight - window.innerHeight;
+      if (bar) bar.style.setProperty('--p', max > 0 ? Math.min(1, window.scrollY / max) : 0);
+      if (timeline) {
+        var r = timeline.getBoundingClientRect();
+        var mid = window.innerHeight * 0.6;
+        var fill = Math.max(0, Math.min(1, (mid - r.top) / r.height));
+        timeline.style.setProperty('--fill', fill);
+        jobs.forEach(function (j) { j.classList.toggle('lit', j.getBoundingClientRect().top < mid); });
+      }
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
+</body>
+</html>
