@@ -116,8 +116,9 @@
 
   /* ----- Experience timeline ----- */
   .timeline { list-style: none; margin: 0; padding: 0; position: relative; }
-  .timeline::before { content: ""; position: absolute; left: 21px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
-  .job { position: relative; padding: 0 0 56px 72px; }
+  .timeline::before { content: ""; position: absolute; left: 21px; top: 8px; bottom: 8px; width: 1px; background: var(--line); z-index: 0; }
+  /* z-index keeps each company's circle above the timeline line, even while it slides in */
+  .job { position: relative; z-index: 1; padding: 0 0 56px 72px; }
   .job:last-child { padding-bottom: 0; }
   .job .mark { position: absolute; left: 0; top: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--surface); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-weight: 600; color: var(--accent); font-size: 1rem; }
   .job h3 { font-family: var(--serif); font-weight: 500; font-size: 1.6rem; letter-spacing: -0.01em; }
@@ -251,6 +252,14 @@
   .toolkit li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 0.975rem; }
   .toolkit li small { color: var(--muted); font-size: 0.85rem; }
 
+  /* ----- Back-to-top button ----- */
+  .to-top { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--accent); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 10px 24px -12px rgba(0,0,0,0.4); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .25s ease, transform .25s ease, background .2s ease, color .2s ease; }
+  .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+  .to-top:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .to-top svg { width: 20px; height: 20px; }
+  @media (max-width: 600px) { .to-top { right: 16px; bottom: 16px; } }
+  @media (prefers-reduced-motion: reduce) { .to-top { transition: none; } }
+
   /* ----- Email buttons: hover shows the address, click copies it ----- */
   .copy-email { position: relative; cursor: pointer; font: inherit; }
   button.pill.copy-email { font-family: var(--mono); font-size: 0.8125rem; }
@@ -296,7 +305,7 @@
   .js .reveal.in { opacity: 1; transform: none; }
 
   /* Experience timeline line fills in as you scroll past it */
-  .timeline::after { content: ""; position: absolute; left: 20px; top: 8px; width: 3px; border-radius: 3px; height: calc(var(--fill, 0) * (100% - 16px)); background: linear-gradient(180deg, var(--accent), var(--warm)); }
+  .timeline::after { content: ""; position: absolute; z-index: 0; left: 20px; top: 8px; width: 3px; border-radius: 3px; height: calc(var(--fill, 0) * (100% - 16px)); background: linear-gradient(180deg, var(--accent), var(--warm)); }
   .job .mark { z-index: 1; transition: background .4s ease, color .4s ease, border-color .4s ease; }
   .job.lit .mark { background: var(--accent); color: #fff; border-color: var(--accent); }
 
@@ -325,7 +334,13 @@
     .signature, .project { padding: 20px; }
   }
 </style>
-<script>document.documentElement.classList.add('js');</script>
+<script>
+  document.documentElement.classList.add('js');
+  // Always open at the top: stop the browser restoring an old scroll position
+  // and drop any leftover section marker (like #lab) from the address.
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -489,7 +504,7 @@
       <div class="result"><div class="delta">3 weeks <span>→</span> 1 week</div><p>Epic and story drafting</p></div>
       <div class="result"><div class="delta">5 days <span>→</span> 4 hours</div><p>Workflow and feature diagrams</p></div>
       <div class="result"><div class="delta">4 days <span>→</span> 3 hours</div><p>Leadership project updates</p></div>    </div>
-    <p class="aside-note reveal">These are my individual results on TSI delivery work, and I've taught the workflow to teammates. I cross-check GPT and Claude against each other for quality, and backlog prioritization stays with me.</p>
+    <p class="aside-note reveal">These are my individual results on TSI delivery work, and I've taught the workflow to teammates. I cross-check ChatGPT and Claude against each other for quality, and backlog prioritization stays with me.</p>
   </div>
 </section>
 
@@ -519,14 +534,14 @@
         <p class="sub">Seeing my finances clearly, decades ahead</p>
         <p>I wanted to understand my finances more deeply. This tool allows me to track and understand my investments, and adds an interactive calculation database for retirement expenses and strategic stacking of income.</p>
         <p>I can change the numbers in real time, adjusting levels, limits, and contributions to different funds, and watch the picture shift. It helps me plan the next decades of my life financially.</p>
-        <p><strong>What's next:</strong> real-time integration with my brokerage portfolio, so positions import automatically instead of being entered by hand. The challenge to solve first is the brokerage's multi-factor authentication (MFA).</p>
+        <p><strong>What's next:</strong> building it out in Power BI.</p>
         <p class="fine"><strong>Not financial advice,</strong> and not a replacement for a professional financial advisor. A personal project; it makes no claims about actual returns or results.</p>
         <p class="built">Built in Excel</p>
       </article>
 
       <article class="project reveal">
         <span class="status personal">Personal project</span>
-        <h3>Meow Meow</h3>
+        <h3><cite>Meow Meow</cite></h3>
         <p class="sub">A homemade cat food recipe book</p>
         <p>Structured homemade recipes for my cats, built around a repeatable batch, portion, freeze, and thaw routine, with a whole-food approach and minimal synthetic supplements.</p>
         <p>It includes a nutrient calculator for the macro- and micronutrients in natural homemade food, plus ratio calculators for building a balanced meal.</p>        <details class="plan">
@@ -576,8 +591,8 @@
 
       <article class="project reveal">
         <span class="status planning">In planning</span>
-        <h3>From Bland to Grand</h3>
-        <p class="sub">A pantry cookbook for the everyday home cook (working title)</p>
+        <h3><cite>Beans and Rice: From Bland to Grand</cite></h3>
+        <p class="sub">A pantry cookbook for the everyday home cook</p>
         <p>Turning affordable, shelf-stable bulk ingredients into satisfying meals for everyday cooking, camping, and backpacking. Base recipes come in several versions, such as regular, no-power, and lightweight backpacking, with gluten-free, dairy-free, vegetarian, and vegan adaptations.</p>
         <p>It's my project end to end: format, purpose, audience, the gap it fills, and what goes on every page. I'm collaborating with one other cook and with backpackers.</p>
         <details class="plan">
@@ -586,8 +601,8 @@
           <div class="wf beans">
             <figure class="wf-page cover">
               <span class="wf-label">Spiral-bound · tabbed</span>
-              <span class="wf-cover-title">From Bland to <em>Grand</em></span>
-              <span class="wf-small">For the everyday home cook</span>
+              <span class="wf-cover-title">Beans and Rice: <em>From Bland to Grand</em></span>
+              <span class="wf-small">A pantry cookbook for the everyday home cook</span>
               <span class="wf-tabs"><i></i><i></i><i></i><i></i></span>
               <figcaption>Cover</figcaption>
             </figure>
@@ -650,7 +665,7 @@
         <p class="sub">A conversation that helps job seekers find their story</p>
         <p>Many people don't recognize their strengths until someone points them out. Tell Me More is an interactive AI tool that interviews job seekers conversationally, so they can answer in their own words. Unconventional questions draw out overlooked experience, specialties, and achievements, then organize them into a clear direction.</p>
         <p>It uses career counseling methods and personality insights as context, not as formal career counseling; I'm not a certified or licensed career counselor or psychologist.</p>
-        <p>A free tool, now in use case definition and customer requirements. A recruiter has agreed to review it.</p>
+        <p>A free tool, now in process: defining use cases, personas, and requirements. A professional recruiter with his own agency and 56K LinkedIn followers has agreed to review it for feedback.</p>
         <p class="built">Planned with Claude Code</p>
       </article>
     </div>
@@ -735,6 +750,47 @@
 <footer>
   <div class="wrap">© Sarah Blegen · Greater Minneapolis-St. Paul</div>
 </footer>
+
+<!-- Back-to-top button: appears after you scroll past the top section -->
+<button type="button" class="to-top" id="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<script>
+  (function () {
+    var btn = document.getElementById('to-top');
+    var hero = document.getElementById('top');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function goTo(el) {
+      el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    }
+    // Back to top: scroll up and put keyboard focus at the start of the page
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      hero.setAttribute('tabindex', '-1');
+      hero.focus({ preventScroll: true });
+    });
+    // Show the button once the top section is out of view
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        btn.classList.toggle('show', !entries[0].isIntersecting);
+      }).observe(hero);
+    } else {
+      btn.classList.add('show');
+    }
+    // Menu links scroll to their section without adding "#section" to the address
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      var id = a.getAttribute('href').slice(1);
+      var target = id && document.getElementById(id);
+      if (!target || a.classList.contains('skip-link')) return;
+      a.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        goTo(target);
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      });
+    });
+  })();
+</script>
 
 <!-- Email buttons: hovering shows the address; clicking copies it and shows "Copied!" -->
 <script>
